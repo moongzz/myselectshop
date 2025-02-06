@@ -29,7 +29,7 @@ public class FolderService {
             if (!isExistFolderName(folderName, existFolderList)) {
                 folderList.add(new Folder(folderName, user));
             } else {
-                throw new IllegalArgumentException("폴더명이 중복되었습니다.");
+                throw new IllegalArgumentException("중복된 폴더명을 제거해주세요! 폴더명: " + folderName);
             }
         }
 
